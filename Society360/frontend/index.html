@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society360 - Smart Residential Management System</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-placeholder">CN</div>
+                <span>Society360</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#dashboard" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#visitors" class="nav-link"><i class="fas fa-users"></i> Visitors</a>
+                <a href="#maintenance" class="nav-link"><i class="fas fa-tools"></i> Maintenance</a>
+                <a href="#finance" class="nav-link"><i class="fas fa-wallet"></i> Finance</a>
+                <a href="#communication" class="nav-link"><i class="fas fa-comments"></i> Communication</a>
+                <div class="user-profile">
+                    <div class="avatar" id="user-avatar">JD</div>
+                    <span class="user-name" id="user-name">John Resident</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Dashboard -->
+        <section id="dashboard" class="dashboard-section active-section">
+            <div class="section-header">
+                <h1><i class="fas fa-home"></i> Resident Dashboard</h1>
+                <p class="welcome-text">Welcome to Society360 - Your Smart Residential Management System</p>
+            </div>
+            
+            <div class="stats-grid" id="dashboard-stats">
+                <!-- Stats will be loaded by JavaScript -->
+            </div>
+            
+            <div class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="showVisitorModal()">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Add Visitor</span>
+                    </button>
+                    <button class="action-btn" onclick="showMaintenanceModal()">
+                        <i class="fas fa-tools"></i>
+                        <span>Raise Request</span>
+                    </button>
+                    <button class="action-btn" onclick="showPaymentModal()">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>Make Payment</span>
+                    </button>
+                    <button class="action-btn" onclick="showAnnouncementModal()">
+                        <i class="fas fa-bullhorn"></i>
+                        <span>View Announcements</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="recent-activities">
+                <h2>Recent Activities</h2>
+                <div class="activity-list" id="recent-activities">
+                    <!-- Activities will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
+</body>
+</html>
