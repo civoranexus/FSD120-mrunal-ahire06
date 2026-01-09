@@ -3,34 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Society360 - Smart Residential Management System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="main"> 
-        <div class="b1">
-        <h1><img src="Long_logo.png" alt="">Society360</h1>
-        <div class="box">
-            <h3>Login as</h3>
-            <div class="btn">
-                <button>Resident</button>
-                <button>Admin</button>
-                <button>Staff</button>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-header">
+            <h1 class="logo">
+                <img src="Long_logo.png" style="width: 40%;">Society360
+            </h1>
+        </div>
+
+        <div class="login-card">
+            <div class="role-selector">
+                <h3>Login as</h3>
+                <div class="role-options">
+                    <button class="role-btn active" data-role="resident">
+                        <i class="fas fa-user"></i> Resident
+                    </button>
+                    <button class="role-btn" data-role="admin">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </button>
+                    <button class="role-btn" data-role="staff">
+                        <i class="fas fa-users"></i> Staff
+                    </button>
+                </div>
             </div>
-            <form>
-                <h3>Email / Mobile</h3>
-                <input type="text" name="email/mobile" placeholder="Enter email or mobile number">
-                <h3>Password</h3>
-                <input type="password" name="password" placeholder="Enter password">
-                <br>
-                <input type="checkbox" name="checkbox" value="Remember Me">
-                <label for="checkbox">Remember Me</label>
-                <br>
-                <input type="submit" value="Log In"> 
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Email / Mobile
+                    </label>
+                    <input type="text" id="email" placeholder="Enter email or mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+
+                <div class="form-options">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember" checked>
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Select Role</label>
+                        <select id="role" required>
+                            <option value="">Select your role</option>
+                            <option value="resident" selected>Resident</option>
+                            <option value="admin">Admin</option>
+                            <option value="staff">Staff</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-sign-in-alt"></i> Log In
+                </button>
+
+                <div class="login-footer">
+                    <a href="#" class="forgot-link">
+                        <i class="fas fa-key"></i> Forgot Password?
+                    </a>
+                    <p>Don't have an account? <a href="#" id="registerLink">Register here</a></p>
+                </div>
+            </form>
+
+            <!-- Registration Form (Hidden by default) -->
+            <form id="registerForm" class="login-form" style="display: none;">
+                <h3 style="text-align: center; margin-bottom: 20px;">Register New Account</h3>
+                
+                <div class="form-group">
+                    <label for="regName"><i class="fas fa-user"></i> Full Name</label>
+                    <input type="text" id="regName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="regEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regMobile"><i class="fas fa-phone"></i> Mobile Number</label>
+                    <input type="tel" id="regMobile" placeholder="Enter your mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regFlat"><i class="fas fa-home"></i> Flat Number</label>
+                    <input type="text" id="regFlat" placeholder="Enter your flat number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="regPassword" placeholder="Create a password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regConfirmPassword"><i class="fas fa-lock"></i> Confirm Password</label>
+                    <input type="password" id="regConfirmPassword" placeholder="Confirm password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-user-plus"></i> Register
+                </button>
+
+                <div class="login-footer">
+                    <p>Already have an account? <a href="#" id="loginLink">Login here</a></p>
+                </div>
             </form>
         </div>
-        </div>
-    
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
