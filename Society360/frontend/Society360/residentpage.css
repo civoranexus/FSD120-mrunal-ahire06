@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+nav span img {
+    height: 55px;
+    width: 120px;
+}
+
+.navbar-options span {
+    margin: 10px;
+}
+
+.navbar-options span a{
+    text-decoration: none;
+    color: black;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.text {
+    color: rgb(50, 47, 47);
+    font-size: 18px;
+}
