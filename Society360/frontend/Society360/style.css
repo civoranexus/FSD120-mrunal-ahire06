@@ -102,6 +102,7 @@ body {
     align-items: center;
     gap: 5px;
     font-weight: 500;
+    color: black;
 }
 
 .role-btn.active {
@@ -112,6 +113,8 @@ body {
 
 .role-btn:hover {
     border-color: var(--primary-color);
+    background-color: rgb(18, 32, 102);
+    color: white;
 }
 
 .login-form .form-group {
@@ -169,6 +172,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    box-shadow: 2px 2px 8px black;
     
 }
 
@@ -181,6 +185,7 @@ body {
 .btn-primary:hover {
     background: #1d4ed8; 
     transform: translateY(-2px);
+    background-color: rgb(18, 32, 102);
     
 }
 
