@@ -181,7 +181,7 @@ hr {
 .footer {
     background: #1e293b;
     color: white;
-    padding: 30px 50px;
+    padding: 66px 50px;
 }
 
 .footer-top {
@@ -238,4 +238,9 @@ hr {
 .footer-right p {
     text-align: left;
 }
+}
+
+img {
+    height: 60px;
+    width: 35px;
 }

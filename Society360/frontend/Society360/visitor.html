@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="visitor.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span><img src="Long_logo.png"></span>
+        <div class="navbar-options">
+            <span>
+                <a href="residentpage.html" class="nav link">
+                    <i class="fa-solid fa-house"></i> 
+                    Dashboard
+                </a>
+            </span>
+            <span>
+                <a href="visitor.html" class="nav link">
+                    <i class="fa-solid fa-users"></i>
+                    Visitors
+                </a>
+            </span>
+            <span>
+                <a href="#maintenance" class="nav link">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    Maintenance
+                </a>
+            </span>
+            <span>
+                <a href="#finance" class="nav link">
+                    <i class="fa-solid fa-wallet"></i>
+                    Finance
+                </a>
+            </span>
+            <span style="margin-right: 500px;">
+                <a href="#communication" class="nav link">
+                    <i class="fa-solid fa-comments"></i> 
+                    Communication
+                </a>
+            </span>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="header">
+            <h1>
+                <i class="fa-solid fa-users"></i>
+                Visitor Management
+            </h1>
+            <button class="add-btn">+ Add New Visitor</button>
+        </div>
+        <div>
+        <div class="filters">
+            <div>
+                <label>Filter by Status:</label>
+                <select name="status" id="status">
+                    <option value="all">All Visitors</option>
+                    <option value="pending">Pending Approval</option>
+                    <option value="approved">Approved</option>
+                    <option value="checked-in">Checked In</option>
+                    <option value="checked-out">Checked Out</option>
+                </select>
+            </div>
+            <input type="text" placeholder="Search visitors...">
+        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Visitor Name</th>
+                        <th>Contact</th>
+                        <th>Visit Date</th>
+                        <th>Purpose</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>+91 9876543210</td>
+                        <td>Jan 15, 2025 at 10:30</td>
+                        <td>Personal Visit</td>
+                        <td class="approved">Approved</td>
+                        <td>
+                            <button class="checkin">Check In</button>
+                            <button class="cancel">Cancel</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Amazon Delivery</td>
+                        <td>+91 8765432109</td>
+                        <td>Jan 16, 2025 at 14:00</td>
+                        <td>Delivery</td>
+                        <td class="pending">Pending</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="cancel">Cancel</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Sarah Smith</td>
+                        <td>+91 7654321098</td>
+                        <td>Jan 14, 2025 at 14:15</td>
+                        <td>Personal Visit</td>
+                        <td class="checkout">Checked Out</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="logo-box">
+                    <span class="logo-icon"><img src="short_logo.png"></span>
+                    <span class="logo-text">Society360 by Civora Nexus</span>
+                </div>
+            </div>
+
+            <div>
+                <p><i class="fa-solid fa-location-dot"></i> Sangamner, Maharashtra - 422605 India</p>
+                <p><i class="fa-solid fa-phone"></i> +91-7350 675192</p>
+                <p><i class="fa-solid fa-envelope"></i> info@civoranexus.com</p>
+                <p>URN: UDYAM-MH-01-0075817</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>
+            © 2025 Civora Nexus Pvt. Ltd. - Connecting Citizens 
+            Through Intelligent Innovation<br>
+            Project ID: FSD120 | Project Name: Society360 - Smart 
+             Residential Management System
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
