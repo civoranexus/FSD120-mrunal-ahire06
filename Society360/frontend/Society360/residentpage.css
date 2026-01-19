@@ -10,8 +10,9 @@
     align-items: center;
     border: 2px solid whitesmoke;
     background:rgb(255, 255, 255);
-    padding: 12px 0;
+    padding: 8px 0;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+    position: fixed;
 }
 
 nav span img {
@@ -24,6 +25,7 @@ nav span img {
     color: #555;
     cursor: pointer;
     padding: 8px 14px;
+    padding-left: 290px;
     border-radius: 8px;
     transition: 0.3s;
     font-size: 20px;
@@ -55,7 +57,7 @@ nav span img {
 .text {
     color: rgb(96, 92, 92);
     font-size: 20px;
-    margin: 65px;
+    margin: 130px;
 }
 
 .container {
@@ -244,3 +246,5 @@ img {
     height: 60px;
     width: 35px;
 }
+
+

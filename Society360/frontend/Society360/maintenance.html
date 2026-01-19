@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Requests</title>
+    <link rel="stylesheet" href="maintenance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+            <span><img src="Long_logo.png"></span>
+            <div class="navbar-options">
+                <span>
+                    <a href="residentpage.html" class="nav link">
+                        <i class="fa-solid fa-house"></i> 
+                        Dashboard
+                    </a>
+                </span>
+                <span>
+                    <a href="visitor.html" class="nav link">
+                        <i class="fa-solid fa-users"></i>
+                        Visitors
+                    </a>
+                </span>
+                <span>
+                    <a href="maintenance.html" class="nav link">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Maintenance
+                    </a>
+                </span>
+                <span>
+                    <a href="#finance" class="nav link">
+                        <i class="fa-solid fa-wallet"></i>
+                        Finance
+                    </a>
+                </span>
+                <span style="margin-right: 500px;">
+                    <a href="#communication" class="nav link">
+                        <i class="fa-solid fa-comments"></i> 
+                        Communication
+                    </a>
+                </span>
+            </div>
+        </nav>
+
+<div class="container">
+
+    <div class="header">
+        <h1>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Maintenance
+        </h1>
+        <button class="new-btn">+ New Request</button>
+    </div>
+
+    <div class="tabs">
+        <button class="active">All Requests</button>
+        <button>Pending</button>
+        <button>In Progress</button>
+        <button>Resolved</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Leaking pipe in kitchen</h3>
+                <span class="status resolved">Resolved</span>
+            </div>
+
+            <p class="id">ID: MR0012 · Jan 10, 2025</p>
+            <p>There is a continuous water leak under the kitchen sink. Need urgent repair.</p>
+
+            <p><b>Category:</b> Plumbing</p>
+            <p><b>Assigned to:</b> Plumbing Team</p>
+            <p><b>Priority:</b> <span class="priority high">High</span></p>
+
+            <button class="btn gray">✔ Mark Resolved</button>
+            <button class="btn blue">➕ Add Note</button>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Broken light in parking</h3>
+                <span class="status progress">In Progress</span>
+            </div>
+
+            <p class="id">ID: MR0013 · Jan 12, 2025</p>
+            <p>Light fixture in parking spot P12 is not working.</p>
+
+            <p><b>Category:</b> Electrical</p>
+            <p><b>Assigned to:</b> Electrical Team</p>
+            <p><b>Priority:</b> <span class="priority medium">Medium</span></p>
+
+            <button class="btn gray">✔ Mark Resolved</button>
+            <button class="btn blue">➕ Add Note</button>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Elevator button stuck</h3>
+                <span class="status pending">Pending</span>
+            </div>
+
+            <p class="id">ID: MR0014 · Jan 14, 2025</p>
+            <p>Button for 5th floor in elevator B is stuck and not responding.</p>
+
+            <p><b>Category:</b> Other</p>
+            <p><b>Assigned to:</b> Not assigned</p>
+            <p><b>Priority:</b> <span class="priority high">High</span></p>
+
+            <button class="btn blue">▶ Mark In Progress</button>
+            <button class="btn blue">➕ Add Note</button>
+        </div>
+
+    </div>
+</div>
+<footer class="footer">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="logo-box">
+                        <span class="logo-icon"><img src="short_logo.png"></span>
+                        <span class="logo-text">Society360 by Civora Nexus</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p><i class="fa-solid fa-location-dot"></i> Sangamner, Maharashtra - 422605 India</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-7350 675192</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@civoranexus.com</p>
+                    <p>URN: UDYAM-MH-01-0075817</p>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>
+                  © 2025 Civora Nexus Pvt. Ltd. - Connecting Citizens 
+                  Through Intelligent Innovation<br>
+                    Project ID: FSD120 | Project Name: Society360 - Smart 
+                  Residential Management System
+                </p>
+            </div>
+        </footer>
+
+</body>
+</html>
