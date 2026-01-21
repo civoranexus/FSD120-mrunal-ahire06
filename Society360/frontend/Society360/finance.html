@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Maintenance Requests</title>
-    <link rel="stylesheet" href="maintenance.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="finance.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -45,76 +46,62 @@
 
 <div class="container">
 
-    <div class="header">
+     <div class="header">
         <h1>
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            Maintenance
+            <i class="fa-solid fa-wallet"></i>
+            Finance & Billing
         </h1>
         <button class="new-btn">+ New Request</button>
     </div>
 
-    <div class="tabs">
-        <button class="active">All Requests</button>
-        <button>Pending</button>
-        <button>In Progress</button>
-        <button>Resolved</button>
-    </div>
+    <div class="billing">
 
-    <div class="cards">
-
-        <div class="card">
-            <div class="card-header">
-                <h3>Leaking pipe in kitchen</h3>
-                <span class="status resolved">Resolved</span>
-            </div>
-
-            <p class="id">ID: MR0012 · Jan 10, 2025</p>
-            <p>There is a continuous water leak under the kitchen sink. Need urgent repair.</p>
-
-            <p><b>Category:</b> Plumbing</p>
-            <p><b>Assigned to:</b> Plumbing Team</p>
-            <p><b>Priority:</b> <span class="priority high">High</span></p>
-
-            <button class="btn gray">✔ Mark Resolved</button>
-            <button class="btn blue">➕ Add Note</button>
+        <div class="balance-card">
+            <h3>Current Balance</h3>
+            <h1>₹12500</h1>
+            <p>Available for maintenance</p>
         </div>
 
-        <div class="card">
-            <div class="card-header">
-                <h3>Broken light in parking</h3>
-                <span class="status progress">In Progress</span>
-            </div>
+        <div class="invoice-card">
+            <h3>Recent Invoices</h3>
 
-            <p class="id">ID: MR0013 · Jan 12, 2025</p>
-            <p>Light fixture in parking spot P12 is not working.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Invoice #</th>
+                        <th>Month</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Due Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
 
-            <p><b>Category:</b> Electrical</p>
-            <p><b>Assigned to:</b> Electrical Team</p>
-            <p><b>Priority:</b> <span class="priority medium">Medium</span></p>
+                <tbody>
+                    <tr>
+                        <td>INV-0125</td>
+                        <td>January 2025</td>
+                        <td>₹2500</td>
+                        <td class="pending">Pending</td>
+                        <td>Jan 31, 2025</td>
+                        <td><button class="pay">Pay Now</button></td>
+                    </tr>
 
-            <button class="btn gray">✔ Mark Resolved</button>
-            <button class="btn blue">➕ Add Note</button>
+                    <tr>
+                        <td>INV-1224</td>
+                        <td>December 2024</td>
+                        <td>₹2500</td>
+                        <td class="paid">Paid</td>
+                        <td>Dec 31, 2024</td>
+                        <td><button class="view">View Receipt</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
-
-        <div class="card">
-            <div class="card-header">
-                <h3>Elevator button stuck</h3>
-                <span class="status pending">Pending</span>
-            </div>
-
-            <p class="id">ID: MR0014 · Jan 14, 2025</p>
-            <p>Button for 5th floor in elevator B is stuck and not responding.</p>
-
-            <p><b>Category:</b> Other</p>
-            <p><b>Assigned to:</b> Not assigned</p>
-            <p><b>Priority:</b> <span class="priority high">High</span></p>
-
-            <button class="btn blue">▶ Mark In Progress</button>
-            <button class="btn blue">➕ Add Note</button>
-        </div>
-
     </div>
 </div>
+
 <footer class="footer">
             <div class="footer-top">
                 <div class="footer-left">
@@ -141,6 +128,9 @@
                 </p>
             </div>
         </footer>
+
+</body>
+</html>
 
 </body>
 </html>

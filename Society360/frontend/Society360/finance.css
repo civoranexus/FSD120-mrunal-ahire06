@@ -10,7 +10,7 @@
     align-items: center;
     border: 2px solid whitesmoke;
     background:rgb(255, 255, 255);
-    padding: 12px 0;
+    padding: 8px 0;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -24,6 +24,7 @@ nav span img {
     color: #555;
     cursor: pointer;
     padding: 8px 14px;
+    padding-left: 290px;
     border-radius: 8px;
     transition: 0.3s;
     font-size: 20px;
@@ -52,97 +53,94 @@ body {
 .container {
     width: 90%;
     margin: 30px auto;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+}
+
+.billing {
+    display: flex;
+    gap: 20px;
+}
+
+.balance-card {
+    width: 30%;
     background: white;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.balance-card h1 {
+    color: #007bff;
+    margin: 15px 0;
 }
 
-.add-btn {
-    background: rgb(0, 123, 255);
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-.filters {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.filters select {
-    padding: 6px;
-}
-
-.filters input {
-    padding: 6px;
+.invoice-card {
+    width: 70%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
 th, td {
-    padding: 12px;
+    padding: 10px;
     text-align: left;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: white;
-}
-
-.approved {
-    color: rgb(0, 109, 128);
-    font-weight: bold;
-    background: rgba(59, 130, 246, 0.1);
-    border-radius: 20px;
-    width: 10px;
+    background-color: #f1f1f1;
 }
 
 .pending {
     color: orange;
     font-weight: bold;
-    width: 10px;
-    background: rgba(59, 130, 246, 0.1);
-    border-radius: 20px;
 }
 
-.checkout {
-    color: rgb(45, 145, 43);
+.paid {
+    color: green;
     font-weight: bold;
-    background: rgba(59, 130, 246, 0.1);
-    width: 10px;
-    border-radius: 20px;
 }
 
 button {
-    padding: 5px 10px;
+    padding: 6px 12px;
     border: none;
-    border-radius: 4px;
-}
-
-.checkin {
-    background: #28a745;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
     color: white;
 }
 
-.approve {
-    background: rgb(0, 123, 255);
+button:hover {
+    background-color: #555;
+}
+
+.pay {
+    background-color: #007bff;
     color: white;
 }
 
-.cancel {
-    background: rgb(220, 53, 69);
-    color: white;
+.pay:hover {
+    background-color: #555;
+    box-shadow: 2px 2px 8px black;
+}
+
+.view {
+    background-color: gray;   
+}
+
+.view:hover {
+    background-color: #7ea9a4;
+    box-shadow: 2px 2px 8px black;
 }
 
 .footer {
@@ -211,3 +209,4 @@ img {
     height: 60px;
     width: 35px;
 }
+
